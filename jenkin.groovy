@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        REPO_URL = 'https://github.com/HeshaniThennakoon/Devops-BookStore'
+        REPO_URL = 'https://github.com/HeshaniThennakoon/Devops-BookStore.git'
         BRANCH = 'master'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/HeshaniThennakoon/Devops-BookStore'
+                git branch: 'master', url: 'https://github.com/HeshaniThennakoon/Devops-BookStore.git'
             }
         }
         
